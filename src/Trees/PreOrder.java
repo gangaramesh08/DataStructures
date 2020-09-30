@@ -1,0 +1,12 @@
+package Trees;
+
+public class PreOrder implements PrintTreeInterface {
+    @Override
+    public void print(Node root) {
+        if(root!=null){
+            System.out.println(root.value);
+            print(root.left);
+            print(root.right);
+        }
+    }
+}
