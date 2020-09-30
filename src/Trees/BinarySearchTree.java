@@ -43,4 +43,27 @@ public class BinarySearchTree {
     public void insert(int value){
         root = insertRec(root,value);
     }
+
+    /**
+     * This method is used for searching element in the binary search tree
+     */
+    public boolean search(int value){
+        return searchRec(root, value);
+    }
+
+    private boolean searchRec(Node root, int value) {
+        boolean find = false;
+        if(root!=null){
+            if(root.value==value){
+                return true;
+            }
+            else if(value<root.value){
+                find=searchRec(root.left,value);
+            }
+            else {
+               find =  searchRec(root.right,value);
+            }
+        }
+        return find;
+    }
 }

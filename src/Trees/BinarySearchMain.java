@@ -1,5 +1,7 @@
 package Trees;
 
+import java.util.Scanner;
+
 public class BinarySearchMain {
     public static void main(String[] args) {
 
@@ -24,5 +26,10 @@ public class BinarySearchMain {
         System.out.println("\nPostOrder Traversal :");
         strategy = new TraversalStrategy(postOrder);
         strategy.print(binarySearchTree.root);
+        System.out.println("\nEnter the element to be searched");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println("Searching... "+n);
+        System.out.println(binarySearchTree.search(n));
     }
 }
