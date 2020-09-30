@@ -5,7 +5,7 @@ public class InOrder implements PrintTreeInterface{
     public void print(Node root) {
         if(root!=null){
             print(root.left);
-            System.out.println(root.value);
+            System.out.print(root.value+" ");
             print(root.right);
         }
     }

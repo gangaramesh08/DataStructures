@@ -6,7 +6,7 @@ public class PostOrder implements PrintTreeInterface {
         if(root!=null){
             print(root.left);
             print(root.right);
-            System.out.println(root.value);
+            System.out.print(root.value+" ");
         }
     }
 }

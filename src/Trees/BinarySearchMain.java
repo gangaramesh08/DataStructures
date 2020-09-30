@@ -13,10 +13,15 @@ public class BinarySearchMain {
         PrintTreeInterface preOrder = new PreOrder();
         PrintTreeInterface postOrder = new PostOrder();
 
+        System.out.println("InOrder Traversal :");
         TraversalStrategy strategy = new TraversalStrategy(inorder);
         strategy.print(binarySearchTree.root);
+
+        System.out.println("\nPreOrder Traversal :");
         strategy = new TraversalStrategy(preOrder);
         strategy.print(binarySearchTree.root);
+
+        System.out.println("\nPostOrder Traversal :");
         strategy = new TraversalStrategy(postOrder);
         strategy.print(binarySearchTree.root);
     }
