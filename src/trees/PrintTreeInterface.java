@@ -1,4 +1,4 @@
-package Trees;
+package trees;
 
 @FunctionalInterface
 public interface PrintTreeInterface {

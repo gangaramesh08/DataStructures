@@ -1,4 +1,4 @@
-package Graph.Algorithms;
+package graph.algorithms;
 
 import java.util.HashMap;
 import java.util.LinkedList;
