@@ -7,7 +7,7 @@ public class TraversalStrategy {
         this.order = order;
     }
 
-    public void print(Node root){
+    public void print(BNode root){
         order.print(root);
     }
 }

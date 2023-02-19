@@ -1,16 +1,5 @@
 package trees;
 
-class Node{
-    int value;
-    Node left;
-    Node right;
-
-    public Node(int value) {
-        this.value = value;
-        this.left = null;
-        this.right = null;
-    }
-}
 /**
  * This class provides an implementation of the Binary Search Tree.
  * A Binary Search Tree is a binary tree in which all the child elements to
@@ -20,15 +9,15 @@ class Node{
  * the node at appropriate location following the rules of the Binary Search Tree.
  */
 public class BinarySearchTree {
-    public Node root;
+    public BNode root;
 
     public BinarySearchTree() {
         root = null;
     }
 
-    private Node insertRec(Node current, int value){
+    private BNode insertRec(BNode current, int value){
         if(current==null){
-            current = new Node(value);
+            current = new BNode(value);
             return current;
         }
         else if(value<current.value){
@@ -51,7 +40,7 @@ public class BinarySearchTree {
         return searchRec(root, value);
     }
 
-    private boolean searchRec(Node root, int value) {
+    private boolean searchRec(BNode root, int value) {
         boolean find = false;
         if(root!=null){
             if(root.value==value){
